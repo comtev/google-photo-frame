@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+echo 0 > /sys/class/graphics/fbcon/cursor_blink # remove the blinking cursor from tty, as it is over-impressed when using fim
+
+exit 0

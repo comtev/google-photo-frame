@@ -1,0 +1,5 @@
+ # m h  dom mon dow   command
+@reboot sleep 30 && fim -auqHR /home/photoframe/photodir/*.jpeg -c 'while(1){display;sleep "30";next;}' & # waiting 30sec to clear the tty and get to the login screen.
+ 0 * * * * /home/photoframe/photodir/update.sh
+0 23 * * * vcgencmd display_power 0
+0 7 * * * vcgencmd display_power 0
